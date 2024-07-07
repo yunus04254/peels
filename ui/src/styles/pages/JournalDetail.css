@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+  color: #5c3d2e;
+  margin-bottom: 2rem;
+}

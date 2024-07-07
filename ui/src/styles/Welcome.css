@@ -1,0 +1,75 @@
+.App-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .welcome-container {
+        display: flex;
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 32px;
+        background: #fafafa;
+        overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+        .welcome-container {
+            flex-direction: column;
+        }
+    }
+    
+    .welcome-left {
+        flex: 1;
+        color:#000;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-right: 1px solid #e0e0e0;
+    }
+    
+    .welcome-left h1 {
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+    
+    .welcome-right {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff;
+        padding: 30px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+    }
+    
+    .alternate-action {
+        color: #555;
+        font-size: 0.85rem;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 400;
+    }

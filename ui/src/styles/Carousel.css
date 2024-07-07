@@ -1,0 +1,15 @@
+
+
+@media (max-width: 450px) {
+    .test {
+        max-width: 30vh;
+        max-height: 30vh;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .test {
+        max-width: 25vh;
+        max-height: 25vh;
+    }
+  }

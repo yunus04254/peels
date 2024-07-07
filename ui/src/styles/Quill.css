@@ -1,0 +1,24 @@
+.ql-container {
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .ql-container {
+      max-height: 50vh; 
+      overflow-y: auto; 
+    }
+  }
+
+@media (max-width: 768px) {
+    .ql-container {
+      max-height: 52vh;
+      overflow-y: auto; 
+    }
+  }
+
+@media (max-height: 600px) {
+    .ql-container {
+      max-height: 25vh;
+      overflow-y: auto; 
+    }
+  }

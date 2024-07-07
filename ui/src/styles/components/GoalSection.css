@@ -1,0 +1,189 @@
+.goal-setting-section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-setting-title {
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.create-goal-btn {
+  font-size: 30px;
+  color: #6c757d;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 12px;
+  line-height: 1;
+}
+
+.create-goal-btn:hover {
+  color: #495057;
+}
+
+.goal-list {
+  margin-top: 20px;
+}
+
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.no-goals-message {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+  font-size: 18px
+}
+
+.goal-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goal-info {
+  cursor: pointer;
+}
+
+.goal-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.goal-description {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.goal-delete-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #adb5bd;
+  cursor: pointer;
+}
+
+.goal-delete-btn:hover {
+  color: #495057;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-goal-btn, .cancel-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-goal-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.save-goal-btn, .cancel-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.save-goal-btn:hover, .cancel-btn:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.reminder-time-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #495057;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-width: none;
+  }
+}
+
+
+
+
+
+

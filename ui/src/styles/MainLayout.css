@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    overflow: auto;
+}
+
+.layout-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Increased to reduce side whitespace and expand content area */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+.content {
+    flex-grow: 1; /* Allows content to fill the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll; /* Ensures content is scrollable even without a visible scrollbar */
+}

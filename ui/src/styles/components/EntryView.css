@@ -1,0 +1,52 @@
+.custom-quill .ql-container {
+  border: none !important;
+}
+
+.custom-quill .ql-editor {
+  padding: 0 !important;
+}
+
+.custom-quill .ql-editor {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  cursor: text;
+}
+
+.vertical-icon {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 20%;
+}
+
+.delete-entry-button {
+  background-color: rgb(206, 22, 22);
+}
+
+.delete-entry-button:hover {
+  background-color: rgb(218, 94, 94);
+}
+
+.entry-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    font-weight: bold;
+}
+
+.entry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 5px auto; 
+  border-radius : 10px;
+}
+
+

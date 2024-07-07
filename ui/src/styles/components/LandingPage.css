@@ -1,0 +1,282 @@
+
+  landing-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .landing-App {
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 0rem auto;
+  }
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+ body {
+    background-color: #f6f6f6;
+  }
+  
+  .landing-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+  }
+  .landing-navbar-menu-container {
+    display: none;
+  }
+  .landing-navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .landing-primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  .landing-primary-button:hover {
+    background-color: rgb(234, 234, 234);
+  }
+  .landing-navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .landing-home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+  }
+  .landing-home-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  .landing-home-image-section {
+    max-width: 600px;
+    flex: 1;
+  }
+  .landing-home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .landing-primary-heading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #4c4c4c;
+    font-weight: 700;
+    /* line-height: 5rem; */
+    max-width: 600px;
+  }
+  .landing-primary-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+  }
+  .landing-secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing-secondary-button svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .landing-secondary-button:hover {
+    background-color: #e48f0f;
+  }
+  .landing-primary-subheading {
+    font-weight: 700;
+    color: #fe9e0d;
+    font-size: 1.15rem;
+  }
+  .landing-team-section-bottom {
+    margin-top: 20rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    border-radius: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .landing-team-section-bottom {
+    margin: 2rem auto;
+  }
+  .landing-team-section-bottom p {
+    font-weight: 700;
+    color: #515151;
+    max-width: 500px;
+    font-size: 1.1rem;
+    margin: 2rem 0rem;
+  }
+  .landing-team-section-bottom h2 {
+    margin-top: 1.5rem;
+    max-width: 120px;
+    border-radius: 50%;
+  }
+  .landing-work-section-wrapper {
+    margin-top: 10rem;
+  }
+  .landing-work-section-top p {
+    text-align: center;
+    max-width: 600px !important;
+  }
+  .landing-work-section-top h1 {
+    max-width: 700px !important;
+  }
+  .landing-work-section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-work-section-info {
+    width: 290px;
+    min-height: 350px;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: #505050;
+    margin: 1rem 2rem;
+  }
+  .landing-work-section-info h2 {
+    margin: 1rem 0rem;
+  }
+  .landing-work-section-bottom {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .landing-work-section-info p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1000px) {
+    .landing-navbar-links-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    .landing-primary-button {
+      font-size: 1rem;
+    }
+    .landing-home-bannerImage-container {
+      max-width: 600px;
+    }
+  }
+  @media (max-width: 800px) {
+    .landing-nav-logo-container {
+      max-width: 100px;
+    }
+    .landing-navbar-links-container {
+      display: none;
+    }
+    .landing-navbar-menu-container {
+      display: flex;
+    }
+    .landing-home-bannerImage-container {
+      max-width: 450px;
+    }
+    .landing-home-banner-container,
+    .landing-home-image-section,
+    .landing-about-section-image-container {
+      width: 100%;
+      max-width: 400px;
+    }
+    .landing-primary-heading {
+      text-align: center;
+      max-width: 90%;
+    }
+    .landing-primary-text {
+      text-align: center;
+      max-width: 80%;
+    }
+    .landing-home-text-section,
+    .landing-about-section-text-container {
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    .landing-secondary-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+    }
+    .landing-primary-subheading {
+      text-align: center;
+    }
+    .watch-video-button {
+      margin-left: 0rem !important;
+      margin-top: 1rem;
+      font-size: 1rem !important;
+    }
+    .landing-work-section-wrapper {
+      margin-top: 5rem !important;
+    }
+    .landing-work-section-bottom {
+      margin-top: 1rem !important;
+    }
+    .landing-contact-form-container {
+      padding: 0.5rem !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem !important;
+    }
+    .landing-contact-form-container input {
+      font-size: 1rem !important;
+      max-width: 100%;
+      padding: 0.5rem 1rem !important;
+      margin-bottom: 0.8rem !important;
+      text-align: center;
+    }
+    .landing-App {
+      max-width: 95vw;
+    }
+  }
+  @media (max-width: 600px) {
+    .landing-home-bannerImage-container,
+    .landing-about-background-image-container {
+      display: none;
+    }
+  }

@@ -1,0 +1,25 @@
+
+.fadecard {
+    animation: fadeAway 1s 1;
+}
+
+.ycard:hover {
+    opacity:70%;
+    cursor:pointer;
+}
+
+@keyframes fadeAway {
+  
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,272 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-width: 25%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar-border {
+  border-color: #d5d5d5 !important;
+  border-width: 1px !important;
+}
+
+.sidebar-nav a,
+.sidebar-nav button {
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  text-align: left;
+  background-color: rgba(244, 232, 232, 0.755);
+  font-size: 16px;
+  border-radius: 28px;
+
+  padding-left: 5%;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-right: 5%;
+
+  margin-top: 18px;
+  letter-spacing: 0.0000000000000000001rem !important;
+
+
+
+
+  font-weight: 475;
+  color: #333;
+  border: none;
+  display: flex;
+}
+.icon {
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.search-button .icon {
+  margin-bottom: 5px !important;
+}
+
+.search-button {
+  background-color: #b5dce2 !important;
+  padding-left: 5%;
+  padding-top: 4% !important;
+  padding-bottom:2%;
+  padding-right: 5%;
+  height: 40px !important;
+
+}
+
+
+
+.sidebar-logo {
+  width: 125px !important;
+  height: auto;
+  align-self: center !important;
+  margin-left: 54px;
+
+}
+
+.search {
+  width: 100% !important;
+  margin-bottom:5px;
+}
+
+.notifications {
+  margin-bottom: 30px !important;
+}
+
+.sidebar-nav a.active,
+.sidebar-nav button.active {
+  font-weight: 500;
+  color: #333;
+  background-color: #e0e0e0;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav button:hover {
+  background-color: #f4f4f4;
+  color: #000;
+  cursor: pointer;
+}
+
+.menu-button {
+  display: none;
+}
+
+.entry-button {
+  background-color: rgba(63, 163, 85, 0.502) !important;
+}
+
+.entry-box {
+  padding-bottom: 15px !important;
+}
+
+.money-counter {
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 22px;
+  font-weight: bold;
+  color: #5C3D2E;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.banana-icon-background {
+  background-color: #fbf3c7;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.banana-icon {
+  width: auto;
+  height: 30px;
+}
+
+.banana-count {
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-image-container {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 4px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: 3px solid #ddd;
+  cursor: pointer;
+}
+
+.profile-image-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image-container:hover img {
+  opacity: 0.7;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-options {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  width: 200px;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.profile-options.active {
+  display: block;
+}
+
+.profile-options a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+.profile-options a:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+
+  .menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .sidebar {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

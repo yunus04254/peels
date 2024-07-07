@@ -1,0 +1,253 @@
+.statistics-layout {
+  background: #F7F7F7;
+  color: #333;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.statistics-header {
+  padding: 30px;
+  text-align: left;
+}
+
+.statistics-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+.statistics-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.statistics-scrollable {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 20px;
+
+  margin-right: -20px;
+}
+
+.quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.quick-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-fact-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.quick-fact-label {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  min-height: 400px;
+}
+
+.chart-wrapper {
+  height: 350px;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.controls-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.statistics-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 0;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.statistics-controls button {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.statistics-controls button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a.selected-range {
+  background-color: #A9A9A9;
+  color: white;
+}
+
+
+.custom-range {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+  font-size: 18px
+}
+
+.selected-range {
+  background-color: #333;
+  color: #fff;
+}
+
+.control-btn.dropbtn {
+  background-color: #E8F5E9;
+  color: #333;
+  border: 2px solid #4CAF50;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.control-btn.dropbtn:hover {
+  background-color: #C8E6C9;
+}
+
+
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column-reverse;
+  }
+
+  .statistics-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    order: -1;
+  }
+
+  .controls-title {
+    display: none;
+  }
+
+  .control-btn,
+  .scroll-btn,
+  .dropbtn {
+    flex: 1 0 30%;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown .dropbtn {
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    text-align: left;
+    padding-left: 20px;
+  }
+}

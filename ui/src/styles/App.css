@@ -1,0 +1,77 @@
+
+@font-face {
+  font-family: 'SF-Pro';
+  src: url('../../public/fonts/SF-Pro.ttf') format('truetype');
+}
+
+body {
+  font-family: 'SF-Pro', sans-serif !important;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.button {
+  background-color: rgba(63, 163, 85, 0.502) !important;
+  color: rgb(66, 61, 61) !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: rgb(0,106,144);
+  background: linear-gradient(270deg, rgba(0,106,144,1) 0%, rgba(215,181,96,1) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.journals-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.journal {
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px 0; /* Vertical spacing */
+  padding: 20px;
+  width: 90%; /* Wider rectangles */
+  max-width: 600px; /* Maximum width */
+  display: flex;
+  justify-content: space-between; /* Space out the title and icons */
+  align-items: center;
+  /* background-color: #f9f9f9; Remove this line */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #333; /* Text color */
+  /* Additional styling if needed */
+}
