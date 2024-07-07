@@ -96,5 +96,7 @@ $ npm test -- --coverage --watchAll
 ## Technology Stack
 ReactJS, Express, JEST testing framework
 
-## Disclaimer
+## Disclaimers
+This repository has been cloned from a private repository owned by another member of the team.
+
 All instances of confidential authentication keys related to Firebase have been removed, as a result, you may encounter errors when running the application locally. A working deployed version is available upon request.
